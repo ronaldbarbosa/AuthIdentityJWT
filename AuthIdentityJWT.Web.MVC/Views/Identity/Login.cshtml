@@ -1,0 +1,36 @@
+@model Microsoft.AspNetCore.Identity.Data.LoginRequest
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <h2>Login</h2>
+    @Html.ValidationSummary()
+    
+    <div class="row">
+        <div class="col mt-4">
+            @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Email, new { type = "email", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "",new { @class = "text-danger" })
+        </div>
+
+        <div class="col mt-4">
+            @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password, "",new { @class = "text-danger" })
+        </div>
+    </div>
+    
+    <div class="mt-4">
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+    
+    <div class="mt-4">
+        @ViewData["body"]
+    </div>
+}

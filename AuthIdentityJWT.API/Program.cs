@@ -30,6 +30,12 @@ app.MapIdentityApi<IdentityUser>();
 
 app.UseHttpsRedirection();
 
+app.UseCors(x => x
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials()
+    .WithOrigins("https://localhost:7219", "http://localhost:5059", "http://localhost:5041"));
+
 app.UseAuthorization();
 
 app.MapControllers();
