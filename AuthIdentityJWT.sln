@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthIdentityJWT.Web.MVC", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthIdentityJWT.API", "AuthIdentityJWT.API\AuthIdentityJWT.API.csproj", "{C53DEECE-0524-4E38-B9D4-57156F079A68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthIdentityJWT.Application", "AuthIdentityJWT.Application\AuthIdentityJWT.Application.csproj", "{0B53CE25-C94B-48E8-9A6D-0C6F9A5B003B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthIdentityJWT.RemoteData", "AuthIdentityJWT.RemoteData\AuthIdentityJWT.RemoteData.csproj", "{891C48FC-97D6-4AAE-AE42-D87F2C934045}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{C53DEECE-0524-4E38-B9D4-57156F079A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53DEECE-0524-4E38-B9D4-57156F079A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53DEECE-0524-4E38-B9D4-57156F079A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B53CE25-C94B-48E8-9A6D-0C6F9A5B003B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B53CE25-C94B-48E8-9A6D-0C6F9A5B003B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B53CE25-C94B-48E8-9A6D-0C6F9A5B003B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B53CE25-C94B-48E8-9A6D-0C6F9A5B003B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891C48FC-97D6-4AAE-AE42-D87F2C934045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891C48FC-97D6-4AAE-AE42-D87F2C934045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891C48FC-97D6-4AAE-AE42-D87F2C934045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891C48FC-97D6-4AAE-AE42-D87F2C934045}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
